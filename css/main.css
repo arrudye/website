@@ -611,7 +611,7 @@ h3{
         line-height: 25px;
         display: block;
         cursor: pointer;
-        background: url(images/IMAGEFAQbtn-close.png) no-repeat;
+        background: url(../images/IMAGEFAQbtn-close.png) no-repeat;
         background-position: 100% center;
         div{
           max-width: 90%;
@@ -625,7 +625,7 @@ h3{
         max-height: 0;
       } 
       input:checked ~ label {
-          background-image: url(images/IMAGEFAQbtn-open.png);
+          background-image: url(../images/IMAGEFAQbtn-open.png);
       }
       input:checked ~ .answer {
           max-height: 100%;
