@@ -278,6 +278,7 @@ h2{
       }
   }
   .right{
+    -webkit-column-break-inside: avoid;
     max-width: 560px;
     width: 100%;
 
