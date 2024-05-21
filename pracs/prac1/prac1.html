@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prac1.css"> 
+    <title>Практическая работа 1</title>
+</head>
+<body>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <td>true + false</td>
+                <td>1</td>
+                <td>иными словами, 1+0=1</td>
+            </tr>
+            <tr>
+                <td>12 / "6"</td>
+                <td>2</td>
+                <td>значения приводятся к типу number и проводится вычисление</td>
+            </tr>
+            <tr>
+                <td>"number" + 15 + 3</td>
+                <td>number153</td>
+                <td>число прибавляется к строке и получается строка, со вторым числом происходит так же</td>
+            </tr>
+            <tr>
+                <td>15 + 3 + "number"</td>
+                <td>18number</td>
+                <td>сначала складываются два числа, потом к ним прибавляется строка и получается строка</td>
+            </tr>
+            <tr>
+                <td>'1' > null</td>
+                <td>true</td>
+                <td>1>0</td>
+            </tr>
+            <tr>
+                <td>"foo" + + "bar"</td>
+                <td>fooNaN</td>
+                <td>+"bar" пытается привести bar к типу number, но поскольку bar не является числом, получается NaN, что и добавляется к строке foo</td>
+            </tr>
+            <tr>
+                <td>'true' == true</td>
+                <td>false</td>
+                <td>сравнение == приводит элементы к типу number, 'true'=NaN и true=1, поэтому они не равны</td>
+            </tr>
+            <tr>
+                <td>false == 'false'</td>
+                <td>false</td>
+                <td>как и в прошлом сравнении: false=0, 'false'==NaN, не равны</td>
+            </tr>
+            <tr>
+                <td>null == ''</td>
+                <td>false</td>
+                <td>строка пустая; она привелась бы в типу null, будь в ней пробелы</td>
+            </tr>
+        </table>
+    </div> 
+
+    <div id="typeof" class="wrapper"></div>
+
+    <div class="wrapper"> Задание 2.
+        <div id="for"></div>
+        <div id="while"></div>
+        <div id="dowhile"></div>
+    </div>
+
+    <div class="wrapper"> Задание 3.
+        <a href="prac1virus.html">Вирус!</a>
+    </div>
+
+    
+    <div class="wrapper">
+        <input id="task4" type="button" value="Задание 4."/>
+    </div>
+
+    <div class="wrapper"> Задание 5.
+        <div id="cycleTo15"></div>
+    </div>
+
+    <div class="wrapper">
+        <input id="task6" type="button" value="Задание 6."/>
+    </div>
+
+    <div class="wrapper"> Задание 7.
+        <div id="cycleEven"></div>
+    </div>
+
+    <div class="wrapper"> Задание 8.
+        <div id="cycleSum"></div>
+    </div>
+
+    <div class="wrapper">
+        <input id="task9" type="button" value="Задание 9."/>
+    </div>
+
+    <div class="wrapper"> Задание 10.
+        <div id="cycleStars"></div>
+    </div>
+
+    <script src="prac1.js"></script>
+</body>
+</html>

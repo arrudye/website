@@ -1,0 +1,23 @@
+body{
+    color: #9181FF;
+}
+
+.wrapper{
+    margin-bottom: 20px;
+}
+
+
+input{
+    background: none;
+    color: #9181FF;
+    font: inherit;
+    border: 1px solid #A294FF;
+}
+
+form input{
+    margin-bottom: 5px;
+}
+
+::placeholder{
+    color: #c4bbff;
+}
