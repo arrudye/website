@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--- -->
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -15,35 +15,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Yeseva+One&display=swap" rel="stylesheet">
     </head>
-<body>
-    <p><a name="top"></a></p>
+<body class="baseBGColor darkestColor">
+    <div id="preloader">
+        <div id="preGif"></div>
+    </div>
+
+    <p class="anchor"><a name="top"></a></p>
 
     <div class="arrow-up">
-        <a href="#top"><img src="images/IMAGEarrrowUp.png"></a>
+        <a href="#top"><img src="images/IMAGEarrrowUp.svg" class="dontHide"></a>
+    </div>
+
+    <div  class="arrow-up paleBGColor baseColor" id="pracs">
+        <a href="pracs/pracIndex.html">ПРАКТИКИ</a>
     </div>
 
     <div id="advert">
-    <div>
+    <div class="grayBGColor">
         Visit My Other Templates!
-        <button id="btn-cross"><img src="images/IMAGEcross.png"></button>
+        <button id="btn-cross"><img src="images/IMAGEcross.svg" class="dontHide makeBright"></button>
     </div>
     </div>
 
     <header>
     <div class="header">
-        <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
-        <div class="pracs"><a href="pracs/pracIndex.html" style="color:#9181FF;">ПРАКТИКИ</a></div>
+        <div class="logo"><a href="#"><img src="images/logo.svg" class="dontHide makeBright"></a></div>
+        <div class="extraTasks">
+            <input type="button" id="btnIncrease" class="paleBGColor baseColor" value="+">
+            <input type="button" id="btnDefault" class="baseBGColor paleColor paleBorder" value="0">
+            <input type="button" id="btnDecrease" class="paleBGColor baseColor" value="-">
+            <input type="button" id="btnPictures" class="paleBGColor baseColor" value="pics">
+            <input type="button" id="btnTheme" value="⋆⁺₊">
+        </div>
         <nav class="menu">
             <ul>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Services</a></li>
-                <li class="square"> </li>
-                <li><a href="#">+1123 456 7890</a></li>
-                <li><a href="#">hello@medium.com</a></li>
-                <li><a href="#">Let's talk</a></li>
-                <li class="square"> </li>
-                <li><p><a class="icons" href="#"><img src="images/be.png"></a>
-                <a href="#"><img src="images/lang.png"></a></p></li>
+                <li><a class="paleTDColor darkestColor" href="#">Work</a></li>
+                <li><a class="paleTDColor darkestColor" href="#">Services</a></li>
+                <li class="square paleBGColor"> </li>
+                <li><a class="paleTDColor darkestColor" href="#">+1123 456 7890</a></li>
+                <li><a class="paleTDColor darkestColor" href="#">hello@medium.com</a></li>
+                <li><a class="paleTDColor darkestColor" href="#">Let's talk</a></li>
+                <li class="square paleBGColor"> </li>
+                <li><p><a class="icons" href="#"><img src="images/be.svg" class="dontHide makeBright"></a>
+                <a href="#"><img src="images/lang.svg" class="dontHide makeBright"></a></p></li>
             </ul>
         </nav>
     </div>
@@ -53,28 +67,28 @@
         <div class="slogan">
             <ul>
                 <li>2016-22</li>
-                <li><a><img src="images/themes.png"></a></li>
+                <li><a><img src="images/themes.svg" class="dontHide"></a></li>
                 <li>Allora = design + thinking</li>
             </ul>
         </div>
-        <div class="longline"></div>
+        <div class="longline paleBorder"></div>
         <h1>Award winning digital design agency based in California</h1>
-        <div class="maininfo"><b>Allora</b><b class="allora-dot">.</b> is a beautiful and simple Webflow Portfolio Template for those creatives and digital studios that want to 
+        <div id="maininfo" class="lightestColor"><b>Allora</b><b class="allora-dot">.</b> is a beautiful and simple Webflow Portfolio Template for those creatives and digital studios that want to 
             have a powerful yet simple website where they can showcase their work and services. Allora<b class="allora-dot">.</b> is the perfect fit for your business.</div>
         <p>
-            <a class="btn" id="btn-left" href="#">Start a Project</a>
-            <a class="btn" id="btn-right" href="#">We're Hiring</a>
+            <a class="btn darkestColor lightBorder" id="btn-left" href="#">Start a Project</a>
+            <a class="btn paleBGColor baseColor" id="btn-right" href="#">We're Hiring</a>
         </p>
         <div class="mainpic">
-            <img src="images/mainpic1.png">
+            <img class="imgMainpic scrollDown" src="images/mainpic.svg">
         </div>
     </div>
 
-    <div class="pics">
+    <div id="pics">
         <div class="pics-left">
             <div class="wrapper">
                 <div class="grid" id="grid1">
-                    <div><a href="#"><img src="images/Frameplus.png"></a></div>
+                    <div><a href="#"><img src="images/Frameplus.svg"></a></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -82,7 +96,7 @@
             </div>
             <div class="wrapper">
                 <div class="grid" id="grid2">
-                    <div><a href="#"><img src="images/Frameplus.png"></a></div>
+                    <div><a href="#"><img src="images/Frameplus.svg"></a></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -90,7 +104,7 @@
             </div>
             <div class="wrapper">
                 <div class="grid" id="grid3">
-                    <div><a href="#"><img src="images/Frameplus.png"></a></div>
+                    <div><a href="#"><img src="images/Frameplus.svg"></a></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -100,7 +114,7 @@
         <div class="pics-right">
             <div class="wrapper">
                 <div class="grid" id="grid4">
-                    <div><a href="#"><img src="images/Frameplus.png"></a></div>
+                    <div><a href="#"><img src="images/Frameplus.svg"></a></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -108,7 +122,7 @@
             </div>
             <div class="wrapper">
                 <div class="grid" id="grid5">
-                    <div><a href="#"><img src="images/Frameplus.png"></a></div>
+                    <div><a href="#"><img src="images/Frameplus.svg"></a></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -116,7 +130,7 @@
             </div>
             <div class="wrapper">
                 <div class="grid" id="grid6">
-                    <div><a href="#"><img src="images/Frameplus.png"></a></div>
+                    <div><a href="#"><img src="images/Frameplus.svg"></a></div>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -129,67 +143,67 @@
         <div class="left">
             <ul>
                 <li>beautiful creative solutions</li>
-                <li class="longline"></li>
+                <li class="longline paleBorder"></li>
             </ul>
             <h2>Expect nothing less than perfect</h2>
         </div>
         <div class="right">
             <div class="info">Setting up your own portfolio site is an awesome method for communicating who you are as an inventive, and to impart your abilities 
                 to the world. How about we investigate how to make a free portfolio and all that you ought to remember for it.</div>
-            <div class="extra"><a href='#'>How we work</a></div>
+            <div class="extra"><a class="darkestColor" href='#'>How we work</a></div>
         </div>
     </div>
 
     <div class="solutions">
-        <div class="sol">
-            <div class="pic"><img src="images/IMAGEsol01.png"></img></div>
+        <div class="sol scrollDown">
+            <div class="pic"><img src="images/IMAGEsol01.svg"></img></div>
             <ul>
                 <li>01</li>
-                <li class="longline"></li>
+                <li class="longline paleBorder"></li>
             </ul>
             <h3>Web Design</h3>
             <div class="info">Why investment portfolio is important to your career Allora can help you get your work noticed whether you are a 
                 graphic designer, product designer, web developer, writer, illustrator.</div>
         </div>
 
-        <div class="sol">
-            <div class="pic"><img src="images/IMAGEsol02.png"></img></div>
+        <div class="sol scrollDown">
+            <div class="pic"><img src="images/IMAGEsol02.svg"></img></div>
             <ul>
                 <li>02</li>
-                <li class="longline"></li>
+                <li class="longline paleBorder"></li>
             </ul>
             <h3>Branding</h3>
             <div class="info">The portfolio website provides visibility for your work showing it to the people you want to see unlike the static 
                 black and white of traditional resumes online portfolios bring your work to life.</div>
         </div>
 
-        <div class="sol">
-            <div class="pic"><img src="images/IMAGEsol03.png"></img></div>
+        <div class="sol scrollDown">
+            <div class="pic"><img src="images/IMAGEsol03.svg"></img></div>
             <ul>
                 <li>03</li>
-                <li class="longline"></li>
+                <li class="longline paleBorder"></li>
             </ul>
             <h3>UI/UX Design</h3>
             <div class="info">In full color it makes your participation in creative output a positive and direct experience. Potential 
                 clients and employers can immediately see your achievements and your uniqueness.</div>
         </div>
 
-        <div class="sol">
-            <div class="pic"><img src="images/IMAGEsol04.png"></img></div>
+        <div class="sol scrollDown">
+            <div class="pic"><img src="images/IMAGEsol04.svg"></img></div>
             <ul>
                 <li>04</li>
-                <li class="longline"></li>
+                <li class="longline paleBorder"></li>
             </ul>
             <h3>Creative Direction</h3>
             <div class="info">The personal portfolio shows them your identity as a creative professional, the ideas behind your work and 
                 whether you are suitable for a particular job or project, put your work out in the world!</div>
         </div>
 
-        <div class="sol">
-            <div class="pic"><img src="images/IMAGEsol05.png"></img></div>
+        <div class="sol scrollDown">
+            <div class="pic"><img src="images/IMAGEsol05.svg"></img></div>
             <ul>
                 <li>05</li>
-                <li class="longline"></li>
+                <li class="longline paleBorder"></li>
             </ul>
             <h3>Motion Graphics</h3>
             <div class="info">The portfolio conveys who you are most of us don’t come to a job interview with a bunch of unordered printouts 
@@ -202,7 +216,7 @@
             <div class="left">
                 <ul>
                     <li>procedure</li>
-                    <li class="longline"></li>
+                    <li class="longline paleBorder"></li>
                 </ul>
                 <h2>The goal isn't to build a website but to build your business</h2>
             </div>
@@ -213,102 +227,103 @@
             </div>
         </div>  
 
-        <div class="verylongline"></div>
-        <ul class="proc01">
+        <div class="verylongline darkLine"></div>
+        <ul class="proc01 scrollRight">
             <li class="num">01</li>
             <li><h3>Goal Identification</h3></li>
         </ul>  
-        <div class="verylongline"></div>
-        <ul class="proc02">
+        <div class="verylongline darkLine"></div>
+        <ul class="proc02 scrollLeft">
             <li class="num">02</li>
             <li><h3>Scope Definition</h3></li>
         </ul>  
-        <div class="verylongline"></div>
-        <ul class="proc03">
+        <div class="verylongline darkLine"></div>
+        <ul class="proc03 scrollRight">
             <li class="num">03</li>
             <li><h3>Sitemap and Wireframe Creation</h3></li>
         </ul>  
-        <div class="verylongline"></div>
-        <ul class="proc04">
+        <div class="verylongline darkLine"></div>
+        <ul class="proc04 scrollLeft">
             <li class="num">04</li>
             <li><h3>Content Creation</h3></li>
         </ul>  
-        <div class="verylongline"></div>
-        <ul class="proc05">
+        <div class="verylongline darkLine"></div>
+        <ul class="proc05 scrollRight">
             <li class="num">05</li>
             <li><h3>Visual Elements</h3></li>
         </ul>  
-        <div class="verylongline"></div>
-        <ul class="proc06">
+        <div class="verylongline darkLine"></div>
+        <ul class="proc06 scrollLeft">
             <li class="num">06</li>
             <li><h3>Testing & Launch</h3></li>
         </ul>  
-        <div class="verylongline"></div>
+        <div class="verylongline darkLine"></div>
     </div>
 
     <div class="bluefield">
         <div class="bglines">
-            <div class="bgline"></div>
-            <div class="bgline"></div>
-            <div class="bgline"></div>
-            <div class="bgline"></div>
-            <div class="bgline"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
         </div>
-        <div class="pageheader">
+        <div class="pageheader baseColor">
             <div class="left">
                 <ul>
                     <li>about medium</li>
-                    <li class="longline"></li>
+                    <li class="longline whiteLine"></li>
                 </ul>
                 <h2>Creating ideas & building brands that truly matter</h2>
             </div>
             <div class="right">
                 <div class="info">When building your own portfolio, don't feel that you need to include anything you have 
                     ever created. Plan your best work and show the types of projects you want to do more.</div>
-                <div class="extra"><a href='#'>Our core values</a></div>
+                <div class="extra baseColor"><a href='#'>Our core values</a></div>
             </div>
         </div>
-        <div class="bppic"><img src="images/IMAGEbluepagepic.png"></img></div>
-        <div class="quote1"><img src="images/Framequote1.png"></img></div>
-        <div class="quote2"><img src="images/Framequote2.png"></img></div>
+        <div class="bppic scrollDown"><img src="images/IMAGEbluepagepic.png"></img></div>
+        <div class="quote1 scrollDown"><img src="images/Framequote1.svg"></img></div>
+        <div class="quote2 scrollDown"><img src="images/Framequote2.svg"></img></div>
     </div>
+
 
     <div class="valuespage">
         <div class="pageheader">
             <div class="left">
                 <ul>
                     <li>our core values</li>
-                    <li class="longline"></li>
+                    <li class="longline paleBorder"></li>
                 </ul>
                 <h2>How we're different</h2>
             </div>
             <div class="right">
-                <div class="info">When creating a portfolio, be sure to: There is a strategy behind the projects you 
+                <div class="info lightestColor">When creating a portfolio, be sure to: There is a strategy behind the projects you 
                     showcase in your website design. Know what skills you want to communicate.</div>
                 <div class="extra"><a href='#'>See FAQs</a></div>
             </div>
         </div>
 
-        <div class="valueblocks">
+        <div class="valueblocks lightLine">
             <div class="valueblock num1">
                 <div class="squares">
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
+                    <div class="square lightSquare"></div>
+                    <div class="square lightSquare"></div>
+                    <div class="square lightSquare"></div>
                 </div>
             </div>
-            <div class="valueblock num2">
-                <h4>01 / Data driven</h4>
+            <div class="valueblock num2 lightLine scrollDown">
+                <h4 class="darkestColor">01 / Data driven</h4>
                 <div class="smallinfo">Identify the types of customers you want to reach and create a plan accordingly.</div>
                 <div class="valsquare"></div>
             </div>
-            <div class="valueblock num3">
-                <h4>02 / Result oriented</h4>
+            <div class="valueblock num3 lightLine scrollDown">
+                <h4 class="darkestColor">02 / Result oriented</h4>
                 <div class="smallinfo">Show your personal style and aesthetics. Assemble an online portfolio to capture the essence of your identity.</div>
                 <div class="valsquare"></div>
             </div>
-            <div class="valueblock num4">
-                <h4>03 / Forward thinking</h4>
+            <div class="valueblock num4 lightLine scrollDown">
+                <h4 class="darkestColor">03 / Forward thinking</h4>
                 <div class="smallinfo">Think of your homepage as a cohesive work body. Each project image, text block etc needs to be harmoniously combined.</div>
                 <div class="valsquare"></div>
             </div>
@@ -321,12 +336,12 @@
             <div class="left">
                 <ul>
                     <li>Frequently Asked questions</li>
-                    <li class="longline"></li>
+                    <li class="longline paleBorder"></li>
                 </ul>
                 <h2>Some questions you might have</h2>
             </div>
             <div class="right">
-                <div class="info">Every project you have participated in is a unique journey from the initial spark of an idea to the final signing, there are 
+                <div class="info lightestColor">Every project you have participated in is a unique journey from the initial spark of an idea to the final signing, there are 
                     personal challenges, problems that need to be solved.</div>
                 <div class="extra"><a href='#'>Our Clients</a></div>
             </div>
@@ -336,67 +351,71 @@
             <div>Services</div>
             <div>Billing & Support</div>
         </div>
-        <div class="verylongline n1"></div>
-        <div class="verylongline n2"></div>
+        <div class="verylongline n1 lightLine"></div>
+        <div class="verylongline n2 lightLine"></div>
         <div class="FAQgrid">
-            <div class="faq">
-                <input type="checkbox" id="question1" checked>
-                <label for="question1">Can you design my Website?</label>
-                <div class="answer">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
-                    project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
-                    ultimately helped your customers achieve their goals.</div>
+            <div class="faqleft">
+                <div class="faq scrollDown">
+                    <input type="checkbox" id="question1" unchecked>
+                    <label for="question1">Can you design my Website?</label>
+                    <div class="answer a1">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
+                        project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
+                        ultimately helped your customers achieve their goals.</div>
+                </div>
+                <div class="faq scrollDown">
+                    <input type="checkbox" id="question2" unchecked>
+                    <label for="question2"><div>Where are you located?</div></label>
+                    <div class="answer a2">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
+                        project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
+                        ultimately helped your customers achieve their goals.</div>
+                </div>
+                <div class="faq scrollDown">
+                    <input type="checkbox" id="question3" unchecked>
+                    <label for="question3"><div>Can you manage my social networks?</div></label>
+                    <div class="answer a3">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
+                        project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
+                        ultimately helped your customers achieve their goals.</div>
+                </div>
             </div>
-            <div class="faq">
-                <input type="checkbox" id="question2" checked>
-                <label for="question2"><div>What kind of consulting do you offer?</div></label>
-                <div class="answer">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
-                    project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
-                    ultimately helped your customers achieve their goals.</div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="question3" checked>
-                <label for="question3"><div>Where are you located?</div></label>
-                <div class="answer">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
-                    project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
-                    ultimately helped your customers achieve their goals.</div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="question4" checked>
-                <label for="question4"><div>How do I set up a call?</div></label>
-                <div class="answer">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
-                    project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
-                    ultimately helped your customers achieve their goals.</div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="question5" checked>
-                <label for="question5"><div>Can you manage my social networks?</div></label>
-                <div class="answer">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
-                    project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
-                    ultimately helped your customers achieve their goals.</div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="question6" checked>
-                <label for="question6"><div>Can I get an estimated cost for your services?</div></label>
-                <div class="answer">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
-                    project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
-                    ultimately helped your customers achieve their goals.</div>
+            <div class=faqright>
+                <div class="faq scrollDown">
+                    <input type="checkbox" id="question4" unchecked>
+                    <label for="question4"><div>What kind of consulting do you offer?</div></label>
+                    <div class="answer a4">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
+                        project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
+                        ultimately helped your customers achieve their goals.</div>
+                </div>
+                <div class="faq scrollDown">
+                    <input type="checkbox" id="question5" unchecked>
+                    <label for="question5"><div>How do I set up a call?</div></label>
+                    <div class="answer a5">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
+                        project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
+                        ultimately helped your customers achieve their goals.</div>
+                </div>
+                <div class="faq scrollDown">
+                    <input type="checkbox" id="question6" unchecked>
+                    <label for="question6"><div>Can I get an estimated cost for your services?</div></label>
+                    <div class="answer a6">Include large and wonderful examples of your work, not just provide a few lines of neat text about each 
+                        project. Tell their story. Write a case study. Include examples of prototypes you created. Describe the steps they took and how your role 
+                        ultimately helped your customers achieve their goals.</div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="bluefield bf2">
         <div class="bglines">
-            <div class="bgline"></div>
-            <div class="bgline"></div>
-            <div class="bgline"></div>
-            <div class="bgline"></div>
-            <div class="bgline"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
+            <div class="bgline palerBG"></div>
         </div>
-        <div class="pageheader">
+        <div class="pageheader baseColor">
             <div class="left">
                 <ul>
                     <li>Our Clients</li>
-                    <li class="longline"></li>
+                    <li class="longline paleBorder"></li>
                 </ul>
                 <h2>Join world's best brands who trusted Allora</h2>
             </div>
@@ -405,20 +424,20 @@
                     going to be like working with you and how your skills and talents can help them.</div>
                 <div class="extra"><a href='#'>Start a project</a></div>
             </div>
-            <div class="clientsgrid">
-                <div class="num1"><img src="images/Groupclients1_1.png"></div>
-                <div class="num2"><img src="images/Groupclients1_2.png"></div>
-                <div class="num3"><img src="images/Groupclients1_3.png"></div>
-                <div class="num4"><img src="images/IMAGEclients2_1.png"></div>
-                <div class="num5"><img src="images/IMAGEclients2_2.png"></div>
-                <div class="num6"><img src="images/IMAGEclients2_3.png"></div>
-                <div class="num7"><img src="images/IMAGEclients3_1.png"></div>
-                <div class="num8"><img src="images/IMAGEclients3_2.png"></div>
-                <div class="num9"><img src="images/IMAGEclients3_3.png"></div>
+            <div class="clientsgrid palerBorder">
+                <div class="num1 palerBorder"><img src="images/IMAGEclients1_1.svg"></div>
+                <div class="num2 palerBorder"><img src="images/IMAGEclients1_2.svg"></div>
+                <div class="num3 palerBorder"><img src="images/IMAGEclients1_3.svg"></div>
+                <div class="num4 palerBorder"><img src="images/IMAGEclients2_1.svg"></div>
+                <div class="num5 palerBorder"><img src="images/IMAGEclients2_2.svg"></div>
+                <div class="num6 palerBorder"><img src="images/IMAGEclients2_3.svg"></div>
+                <div class="num7 palerBorder"><img src="images/IMAGEclients3_1.svg"></div>
+                <div class="num8 palerBorder"><img src="images/IMAGEclients3_2.svg"></div>
+                <div class="num9 palerBorder"><img src="images/IMAGEclients3_3.svg"></div>
             </div>
             <div class="info">By telling these stories, they get a glimpse into your creative process and know what to expect if they hire you.</div>
         </div>
-        <div class="bppic"><img src="images/IMAGEbluefield2photo.png"></img></div>
+        <div class="bppic scrollDown"><img src="images/IMAGEbluefield2photo.png"></img></div>
     </div>
 
     <div class="contactpage">
@@ -426,76 +445,74 @@
             <div class="left">
                 <ul>
                     <li>Contact Us</li>
-                    <li class="longline"></li>
+                    <li class="longline paleBorder"></li>
                 </ul>
                 <h2>Dedicated to serve our customers</h2>
             </div>
             <div class="right">
-                <div class="info">Branding isn’t only for big companies. Whether you’re a retail giant or a freelancer, branding shows your 
+                <div class="info darkergrayColor">Branding isn’t only for big companies. Whether you’re a retail giant or a freelancer, branding shows your 
                     value and how you’re different from the competition.</div>
             </div>
         </div>
         <div class="contactcards">
-            <div class="contact c01">
-                <div class="conttitle">Collaborate</div>
-                <div class="continfo">If you're ready to start a project, fill up the form below and our team will be in touch to find out more.</div>
-                <div class="contlink"><a href='#'>hello@allora.com</a></div>
+            <div class="contact c01 formBGColor scrollLeft">
+                <div class="conttitle baseColor">Collaborate</div>
+                <div class="continfo baseColor">If you're ready to start a project, fill up the form below and our team will be in touch to find out more.</div>
+                <div class="contlink"><a class="darkestColor" href='#'>hello@allora.com</a></div>
                 <div class="input-form">
                     <form action="" method="get">
-                        <input placeholder="Name">
-                        <input placeholder="Email">
-                        <input placeholder="Phone">
-                        <textarea placeholder="Please indicate the nature of your inquiry..."></textarea>
+                        <input class="placeHolder" placeholder="Name">
+                        <input class="placeHolder" placeholder="Email">
+                        <input class="placeHolder" placeholder="Phone">
+                        <textarea class="placeHolder" placeholder="Please indicate the nature of your inquiry..."></textarea>
                     </form>
                 </div>
-                <div class="circle">01</div>
+                <div class="circle lighterBGColor">01</div>
             </div>
-            <div class="contact c02">
-                <div class="conttitle">Join our team</div>
-                <div class="continfo">We're always looking for talented new members that push us to be bolder, dream bigger, and perform better.</div>
-                <div class="contlink"><a href='#'>team@allora.com</a></div>
-                <div class="circle">02</div>
+            <div class="contact c02 formBGColor scrollRight">
+                <div class="conttitle baseColor">Join our team</div>
+                <div class="continfo baseColor">We're always looking for talented new members that push us to be bolder, dream bigger, and perform better.</div>
+                <div class="contlink"><a class="darkestColor" href='#'>team@allora.com</a></div>
+                <div class="circle lighterBGColor">02</div>
             </div>
-            <div class="contact c03">
-                <div class="conttitle">Just say hello</div>
-                <div class="continfo" style="font-size:14px">hello</div> 
-                <div class="continfo" style="margin-top: 0;">/həˈləʊ,hɛˈləʊ/</div>
-                <div class="continfo" style="margin-top: 23px;">Used as a greeting or to begin a phone conversation, so here are the details to do so.</div>
-                <div class="continfo" style="margin-top: 18px; line-height: 20px;">1811 N South Third Street<br>Suite 119A<br>Monterrey, MX 54303</div>
+            <div class="contact c03 formBGColor scrollRight">
+                <div class="conttitle baseColor">Just say hello</div>
+                <div class="continfo baseColor" style="font-size:14px">hello</div> 
+                <div class="continfo baseColor" style="margin-top: 0;">/həˈləʊ,hɛˈləʊ/</div>
+                <div class="continfo baseColor" style="margin-top: 23px;">Used as a greeting or to begin a phone conversation, so here are the details to do so.</div>
+                <div class="continfo baseColor" style="margin-top: 18px; line-height: 20px;">1811 N South Third Street<br>Suite 119A<br>Monterrey, MX 54303</div>
                 <div class="lastline">
-                    <div class="contlink" style="text-decoration: none;"><a href='#'></a>Call us on</div>
-                    <div class="contlink" style="margin-left:6px"><a href='#'>+1123 456 7890</a></div>
+                    <div class="contlink" style="text-decoration: none;"><a class="darkestColor" href='#'></a>Call us on</div>
+                    <div class="contlink" style="margin-left:6px"><a class="darkestColor" href='#'>+1123 456 7890</a></div>
                 </div>
-                <div class="circle">03</div>
+                <div class="circle lighterBGColor">03</div>
             </div>
         </div>
     </div>
-    
     <footer>
     <div class="linkspage">
         <div class="title">Usefull Links</div>
         <div class="header">
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li class="square"> </li>
-                    <li><a href="#">About us</a></li>
-                    <li class="square"> </li>
-                    <li><a href="#">Send us a message</a></li>
+                    <li><a class="paleTDColor darkestColor" href="#">Work</a></li>
+                    <li><a class="paleTDColor darkestColor" href="#">Services</a></li>
+                    <li class="square graySquare"> </li>
+                    <li><a class="paleTDColor darkestColor" href="#">About us</a></li>
+                    <li class="square graySquare"> </li>
+                    <li><a class="paleTDColor darkestColor" href="#">Send us a message</a></li>
                 </ul>
             </nav>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">+1123 456 7890</a></li>
-                    <li class="square"> </li>
-                    <li><a href="#">hello@medium.com</a></li>
+                    <li><a class="paleTDColor darkestColor" href="#">+1123 456 7890</a></li>
+                    <li class="square graySquare"> </li>
+                    <li><a class="paleTDColor darkestColor" href="#">hello@medium.com</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     </footer>
-    
     <div class="copyright">
         <div class="container">
             <p>Copyright ©2022 Made with by</p>
