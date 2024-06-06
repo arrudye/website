@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prac6.css"> 
+    <title>Практическая работа 6</title>
+</head>
+<body>
+  <div id="result">
+    <fieldset>
+      <legend>Результат</legend>
+      <div class="wrapper">
+        <span>Как насчёт того, чтобы поиграть в <span id="resultText">/название/</span>?</span>
+      </div>
+      <div>
+        <input type="button" class="button" id="closeResult" value="Ок!">
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="container">
+    <form name="gameadviser">
+      <fieldset>
+        <legend>Подбери игру!</legend>
+
+        <div class="wrapper select">
+          <label class="biglabel" for="genre"> Жанр </label>
+          <select name="genre" id="genre">
+            <option value="action">экшн</option>
+            <option value="strategy">стратегия</option>
+          </select>
+        </div>
+        <div class="wrapper select">
+          <label class="biglabel" for="setting"> Сеттинг </label>
+          <select name="setting" id="setting">
+            <option value="fantasy">фэнтези</option>
+            <option value="scifi">научная фантастика</option>
+            <option value="realworld">реализм</option>
+          </select>
+        </div>
+
+        <div class="wrapper">
+          <label class="biglabel" for="pov"> POV </label> <br>
+          <div class="radioform">
+            <input type="radio" id="firstPOV" value="first" name="pov"><label for="firstPOV">от первого лица</label>
+            <input type="radio" id="thirdPOV" value="third" name="pov"><label for="thirdPOV">от третьего лица</label>
+          </div>
+        </div> 
+
+        <div class="wrapper">
+          <label class="biglabel"  for="multiplayer"> Мультиплеер </label> <br>
+          <div class="radioform">
+            <input type="radio" id="multiplayer" value="multiplayer" name="multiplayer"><label for="multiplayer">еcть</label>
+            <input type="radio" id="single" value="single" name="multiplayer"><label for="single">нет</label>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <label class="biglabel" for="graphics"> Графика </label> <br>
+          <div class="radioform">
+            <input type="radio" id="realistic" value="realistic" name="graphics"><label for="realistic">реалистичная</label>
+            <input type="radio" id="stylized" value="stylized" name="graphics"><label for="stylized">стилизованная</label>
+          </div>
+        </div>
+      
+        <div>
+          <input type="button" class="button" name="submit" value="результат">
+        </div>
+
+        <div>
+          <input type="button" class="button" name="random" value="случайно">
+        </div>
+
+        <div>
+          <input type="button" class="button" name="recomend" value="порекомендуй">
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+  <script src="prac6.js"></script>
+</body>
+</html>
